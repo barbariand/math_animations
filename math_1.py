@@ -198,8 +198,8 @@ class MathScene(Scene):
         self.wait()
 
         # Replace equations with arctan
-        arctan_equation_blue = MathTex(r"\arctan\left(\frac{2.5}{t}\right)").shift(UP*0.5)
-        arctan_equation_green = MathTex(r"\arctan\left(\frac{1}{t}\right)").shift(UP*0.5+RIGHT*5)
+        arctan_equation_blue = MathTex(r"\arctan\left(\frac{2.5}{t}\right)",color=BLUE).shift(UP*0.5)
+        arctan_equation_green = MathTex(r"\arctan\left(\frac{1}{t}\right)",color=GREEN).shift(UP*0.5+RIGHT*5)
 
         self.play(Transform(tan_equation_blue, arctan_equation_blue), Transform(tan_equation_green, arctan_equation_green))
         self.wait()
